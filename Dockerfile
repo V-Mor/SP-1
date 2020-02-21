@@ -1,3 +1,7 @@
 FROM alpine 
 
-VOLUME /app
+WORKDIR /usr/app
+
+COPY ./script.sh /usr/app
+
+ENTRYPOINT ./script.sh
