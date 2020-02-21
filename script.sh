@@ -15,7 +15,7 @@ do
 		read user_response
 		if [[ $user_response = "n" ]]
 			then
-			exit 0
+			exit 1
 		else
 			continue
 		fi
